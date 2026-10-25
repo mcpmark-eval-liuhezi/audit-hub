@@ -1,0 +1,11 @@
+name: Release audit dry-run
+
+on:
+  push:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report
+        run: echo "audit dry-run executed at $(date -u)"
